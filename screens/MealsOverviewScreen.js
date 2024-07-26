@@ -19,9 +19,10 @@ const MealsOverviewScreen = ({ route, navigation }) => {
 
 
 	const renderMealItem = itemData => {
-		const { title, imageUrl, duration, complexity, affordability } = itemData.item;
+		const { id, title, imageUrl, duration, complexity, affordability } = itemData.item;
 
 		const mealItemProps = {
+			id,
 			title,
 			imageUrl,
 			duration,
